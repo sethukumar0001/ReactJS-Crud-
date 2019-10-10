@@ -1,0 +1,12 @@
+.box{
+    border: 1px solid lightgrey;
+outline: #ffffff solid 0px;
+margin: auto;  
+padding: 60px;
+text-align: center;
+height:300px;
+width: 70%;
+margin-top: 50px
+
+
+}
