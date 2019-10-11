@@ -1,14 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Template from "./components/Ui/template";
+import AddData from "./components/addData";
+import ShowList from './components/showList';
+import {Provider} from 'react-redux';
+import store from './redux/store';
+
 import './App.css';
 
 function App() {
   return (
       <Router>
-        <Switch>
-          <Route exact path="/" component={Template} />    
-        </Switch>
+         <Provider store={store}>
+        <div>
+          <ShowList />
+          <AddData />
+        </div>
+      </Provider>
       </Router>
   );
 }
